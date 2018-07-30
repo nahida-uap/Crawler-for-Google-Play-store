@@ -12,7 +12,7 @@ import selenium.webdriver.support.expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
 
 # @author Nahida Sultana Chowdhury <nschowdh@iu.edu>
-#additionally add CSV file method here...
+# reviews will store at CSV file
 
 non_bmp_map = dict.fromkeys(range(0x10000, sys.maxunicode + 1), 0xfffd)
 chromedriver_loc = "/home/mitu/Desktop/gcrawlertest/my_crawler/env/bin/chromedriver"
@@ -20,8 +20,8 @@ driver = webdriver.Chrome(executable_path=chromedriver_loc)
 wait = WebDriverWait( driver, 10 )
 
 # Append your app store urls here
-urls = ["https://play.google.com/store/apps/details?id=com.facebook.orca"
-]
+urls = ["https://play.google.com/store/apps/details?id=com.facebook.orca"]
+
 appCounter = 0
 for url in urls:
     #print(url)
