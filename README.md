@@ -5,7 +5,8 @@ This is a Python based Google Play Crawler which require:
 - beautifulsoup4
 - Chromedriver (need to place in the same working directory)
 
-As Input user need to pass single or multi URL: urls = ["https://play.google.com/store/apps/details?id=com.facebook.orca" ] In returns the program will retrun the following fields and will store into seperate CSV files:
+As Input user need to pass single or multi URL: urls = ["https://play.google.com/store/apps/details?id=com.facebook.orca"]
+In returns the program will retrun the following fields and will store into seperate CSV files:
 - App title
 - Review text body
 - Creation Date
